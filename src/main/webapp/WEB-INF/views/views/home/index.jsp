@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ include file="/common/taglib.jsp"%>
 
 
             <div class="row tm-row">
@@ -7,7 +6,7 @@
                     <hr class="tm-hr-primary">
                     <a href="post.html" class="effect-lily tm-post-link tm-pt-60">
                         <div class="tm-post-link-inner">
-                            <img src="${pageContext.request.contextPath }/img/img-01.jpg" alt="Image" class="img-fluid">                            
+                            <img src="${contentPath }/img/img-01.jpg" alt="Image" class="img-fluid">                            
                         </div>
                         <span class="position-absolute tm-new-badge">New</span>
                         <h2 class="tm-pt-30 tm-color-primary tm-post-title">Simple and useful HTML layout</h2>
@@ -28,7 +27,7 @@
                 </article>
                 <article class="col-12 col-md-6 tm-post">
                     <hr class="tm-hr-primary">
-                    <a href="post.html" class="effect-lily tm-post-link tm-pt-60">
+                    <a href="${contextPath }/home/post" class="effect-lily tm-post-link tm-pt-60">
                         <div class=" tm-post-link-inner">
                             <img src="${contentPath }/img/img-02.jpg" alt="Image" class="img-fluid">                            
                         </div>
@@ -51,7 +50,7 @@
                 </article>
                 <article class="col-12 col-md-6 tm-post">
                     <hr class="tm-hr-primary">
-                    <a href="post.html" class="effect-lily tm-post-link tm-pt-20">
+                    <a href="${contextPath }/home/post" class="effect-lily tm-post-link tm-pt-20">
                         <div class="tm-post-link-inner">
                             <img src="${contentPath }/img/img-03.jpg" alt="Image" class="img-fluid">
                         </div>
@@ -73,7 +72,7 @@
                 </article>
                 <article class="col-12 col-md-6 tm-post">
                     <hr class="tm-hr-primary">
-                    <a href="post.html" class="effect-lily tm-post-link tm-pt-20">
+                    <a href="${contextPath }/home/post" class="effect-lily tm-post-link tm-pt-20">
                         <div class="tm-post-link-inner">
                             <img src="${contentPath }/img/img-04.jpg" alt="Image" class="img-fluid">
                         </div>
@@ -95,7 +94,7 @@
                 </article>
                 <article class="col-12 col-md-6 tm-post">
                     <hr class="tm-hr-primary">
-                    <a href="post.html" class="effect-lily tm-post-link tm-pt-20">
+                    <a href="${contextPath }/home/post" class="effect-lily tm-post-link tm-pt-20">
                         <div class="tm-post-link-inner">
                             <img src="${contentPath }/img/img-05.jpg" alt="Image" class="img-fluid">
                         </div>
@@ -119,7 +118,7 @@
                 </article>
                 <article class="col-12 col-md-6 tm-post">
                     <hr class="tm-hr-primary">
-                    <a href="post.html" class="effect-lily tm-post-link tm-pt-20">
+                    <a href="${contextPath }/home/post " class="effect-lily tm-post-link tm-pt-20">
                         <div class="tm-post-link-inner">
                             <img src="${contentPath }/img/img-06.jpg" alt="Image" class="img-fluid">
                         </div>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="components.news" template="/WEB-INF/views/templates/news.jsp">
+        <put-attribute name="search" value="/WEB-INF/views/components/search.jsp" />
+        <put-attribute name="leftbar" value="/WEB-INF/views/components/leftbar.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/views/components/footer.jsp" />
+    </definition>
+
+    <definition name="home.index" extends="components.news" >
+        <put-attribute name="body" value="/WEB-INF/views/views/home/index.jsp" />
+    </definition>
+
+    <definition name="home.contact" extends="components.news" >
+        <put-attribute name="body" value="/WEB-INF/views/views/home/contact.jsp" />
+    </definition>
+
+    <definition name="home.about" extends="components.news" >
+        <put-attribute name="body" value="/WEB-INF/views/views/home/about.jsp" />
+    </definition>
+
+    <definition name="home.post" extends="components.news" >
+        <put-attribute name="body" value="/WEB-INF/views/views/home/post.jsp" />
+    </definition>
+
+</tiles-definitions>

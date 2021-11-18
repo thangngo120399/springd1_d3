@@ -34,13 +34,6 @@ public class LoginController{
 
 
 
-	@GetMapping("index")
-	public String list(Model model, HttpSession session) {
-		if (session.getAttribute("USER") == null) {
-			return "redirect:/home/login";
-		}
-		return "home/index";
-	}
 
 	@GetMapping("login")
 	public String login(HttpSession session) {
@@ -48,7 +41,7 @@ public class LoginController{
 			return "redirect:/home/index";
 		}
 		listUser = userDao.getList();
-		return "login/login";
+		return "views/login/login";
 	}
 
 	@PostMapping("login")
